@@ -1,6 +1,6 @@
 # umi-plugin-wdyr
 
-[![NPM version](https://img.shields.io/npm/v/umi-plugin-wdyr.svg?style=flat-square)](https://npmjs.org/package/umi-plugin-wdyr) [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-wdyr.svg?style=flat-square)](https://npmjs.org/package/umi-plugin-wdyr)
+[![NPM version](https://img.shields.io/npm/v/umi-plugin-wdyr.svg?style=flat-square)](https://npmjs.org/package/umi-plugin-wdyr) [![NPM downloads](https://img.shields.io/npm/dm/umi-plugin-wdyr.svg?style=flat-square)](https://npmjs.org/package/umi-plugin-wdyr)
 
 umi plugin for [why-did-you-render](https://github.com/welldone-software/why-did-you-render)
 
