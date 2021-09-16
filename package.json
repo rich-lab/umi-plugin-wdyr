@@ -16,8 +16,9 @@
   "scripts": {
     "build": "rm -rf {es,lib} && father-build",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "test": "umi-test",
-    "prepublishOnly": "npm run build"
+    "test": "echo \"skip test.\"",
+    "prepublishOnly": "npm run build",
+    "release": "np"
   },
   "husky": {
     "hooks": {
