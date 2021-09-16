@@ -24,3 +24,7 @@ $ yarn add umi-plugin-wdyr
 ```
 
 You can checkout the fully config options from [why-did-you-render#options](https://github.com/welldone-software/why-did-you-render#options).
+
+### whyDidYouRender preview
+
+<img src="./screenshot.png" alt="umi whyDidYouRender preview" width="800" />
