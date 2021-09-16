@@ -1,0 +1,67 @@
+{
+  "name": "umi-plugin-wdyr",
+  "version": "0.0.0",
+  "description": "umi plugin for why-did-you-render",
+  "keywords": [
+    "umi",
+    "umijs"
+  ],
+  "main": "lib",
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "chemdemo <yangdemo@gmali.com>",
+  "scripts": {
+    "build": "rm -rf {es,lib} && father-build",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "prepublishOnly": "npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "dependencies": {
+    "@welldone-software/why-did-you-render": "^6.2.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^25.2.3",
+    "@types/react": "^16",
+    "@umijs/test": "^3",
+    "@umijs/test-utils": "^3",
+    "@umijs/types": "^3",
+    "father-build": "^1.17.2",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.0.7",
+    "np": "^6.2.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rich-lab/umi-plugin-wdyr"
+  },
+  "license": "MIT"
+}
