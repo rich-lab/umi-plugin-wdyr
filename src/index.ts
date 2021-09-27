@@ -43,18 +43,6 @@ export default (api: IApi) => {
 
   // 只针对dev开启
   if (api.env === 'development' && options) {
-    api.modifyBabelPresetOpts((opts) => {
-      return {
-        ...opts,
-        react: {
-          ...opts.react,
-          runtime: 'automatic',
-          development: true,
-          importSource: '@welldone-software/why-did-you-render',
-        },
-      };
-    });
-
     api.addHTMLHeadScripts(() => [
       {
         content: `window.__WDYR__ = ${JSON.stringify(options)};`,
